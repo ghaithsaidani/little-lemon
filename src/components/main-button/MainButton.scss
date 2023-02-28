@@ -1,0 +1,14 @@
+@import "../../variables";
+
+.main-button {
+  background-color: $primary-yellow;
+  padding: 15px 35px;
+  max-width: 200px;
+  min-height: 60px;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: 600;
+}

@@ -1,0 +1,61 @@
+@import '../../../variables';
+
+#highlights {
+    article {
+      display: grid;
+      padding: 0 20px;
+      gap: 50px 0;
+      .meals-cards {
+        display: grid;
+        width: fit-content;
+        margin: auto;
+        gap: 50px;
+        .meal-card {
+          width: 300px;
+          height: 500px;
+          background-color: $light;
+          border-radius: 10px 10px 0 0;
+          > img {
+            height: 200px;
+            width: 300px;
+            border-radius: 15px 15px 0 0;
+          }
+          .card-body {
+            padding: 20px 20px 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: calc(100% - 200px);
+            
+            .card-head {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              
+              .meal-name {
+                font-family: MArkaziText;
+                font-size: 28px;
+              }
+              .meal-price{
+                color: $secondary-medium-orange;
+                font-size: 20px;
+              }
+            }
+            .card-description {
+              color: $primary-green;
+              font-size: 20px;
+            }
+            button {
+              font-size: 20px;
+              display: flex;
+              align-items: center;
+              gap: 20px;
+            }
+          }
+        }
+      }
+      >button{
+        place-self: center;
+      }
+    }
+}

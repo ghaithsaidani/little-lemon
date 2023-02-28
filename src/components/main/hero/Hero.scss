@@ -1,0 +1,53 @@
+@import "../../../variables";
+
+#home {
+  article {
+    padding: 20px 100px 0 100px;
+    text-align: center;
+    background-color: $primary-green;
+    color: $light;
+    display: grid;
+    place-items: center;
+    .hero-head {
+      display: grid;
+      place-items: center;
+      h1,
+      h3 {
+        font-family: "MarkaziText", sans-serif;
+        font-weight: 400;
+      }
+
+      h1 {
+        color: $primary-yellow;
+        font-size: 50px;
+      }
+
+      h3 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 20px;
+        margin-top: 20px;
+        line-height: 150%;
+      }
+
+      button {
+        margin-top: 60px;
+      }
+    }
+
+    > img {
+      width: 250px;
+      height: 300px;
+      margin: 20px 0 -50px 0;
+      border-radius: 10px;
+    }
+  }
+}
+
+@media screen and (min-width:768px) {
+  article{
+
+  }
+}

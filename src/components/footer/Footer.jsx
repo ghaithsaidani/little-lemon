@@ -1,3 +1,5 @@
+import './Footer.scss'
+
 export const Footer = () => {
   return (
     <footer>
@@ -5,3 +7,5 @@ export const Footer = () => {
     </footer>
   )
 }
+
+export default Footer

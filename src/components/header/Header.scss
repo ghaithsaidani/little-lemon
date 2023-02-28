@@ -1,0 +1,81 @@
+@import "../../variables";
+
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 40px calc(100% - 40px);
+  padding: 30px;
+  box-sizing: border-box;
+  position: fixed;
+  width: 100%;
+  box-shadow: rgba(33, 35, 38, 0.1) 0 10px 10px -10px;
+  > img {
+    z-index: 2;
+  }
+  .open-close-navbar {
+    z-index: 2;
+    width: fit-content;
+    place-self: center end;
+
+    button {
+      background: transparent;
+
+      img {
+        height: 35px;
+        width: 35px;
+      }
+    }
+  }
+
+}
+
+.non-collapsed {
+  background: white;
+  .open-nav-button {
+    display: block;
+  }
+
+  .close-nav-button {
+    display: none;
+  }
+}
+
+.collapsed {
+  position: fixed;
+  height: 100vh;
+  .open-close-navbar {
+    .open-nav-button {
+      display: none;
+    }
+
+    .close-nav-button {
+      display: block;
+    }
+  }
+}
+
+@media screen and (min-width: 767px){
+  header {
+    background: white;
+    grid-template-rows: 100%;
+    grid-template-columns: 200px calc(100% - 200px);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    > img {
+      place-self: center;
+    }
+  }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,91 @@
+@import "../../../variables";
+
+nav {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  z-index: 0;
+  background-color: rgba($dark,0.95);
+  ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    li {
+      margin-bottom: 30px;
+
+      a {
+        text-transform: capitalize;
+        text-decoration: none;
+        margin-bottom: 30px;
+        font-size: 30px;
+        color: white;
+      }
+    }
+    li:last-child {
+      margin: 0;
+    }
+  }
+}
+
+.collapsed {
+  nav{
+    animation: OpenNavbar .5s;
+  }
+}
+
+
+@media screen and (min-width: 767px) {
+  nav {
+    position: relative;
+    height: 40px;
+    width: 100%;
+    grid-row: 1;
+    grid-column: 2;
+    background: transparent;
+    ul {
+      display: flex;
+      margin: 0;
+      height: 100%;
+      align-items: center;
+      gap: 2vw;
+      justify-content: center;
+
+      li {
+        margin: 0;
+        display: flex;
+        align-items: center;
+
+        a {
+          margin: 0;
+          font-size: 1.2rem;
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  nav {
+    width: fit-content;
+
+    ul {
+      gap: 2vw;
+    }
+  }
+}
+
+
+@keyframes OpenNavbar {
+  from {
+    bottom: 100%;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}

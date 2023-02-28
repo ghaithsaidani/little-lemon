@@ -1,10 +1,13 @@
-import { Home } from "./home/Home"
+import { Highlights, Hero } from "."
+import './Main.scss'
 
-export const Main = () => {
+ const Main = () => {
   return (
     <main>
-      <Home/>
+      <Hero/>
+      <Highlights/>
     </main>
   )
 }
+export default Main
 
