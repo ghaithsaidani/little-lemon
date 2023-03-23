@@ -12,3 +12,10 @@
   font-size: 20px;
   font-weight: 600;
 }
+
+@media screen and (min-width: 767px){
+  .main-button {
+    padding: 20px 35px;
+    max-width: 250px;
+  }
+}
